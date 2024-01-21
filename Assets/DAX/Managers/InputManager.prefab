@@ -1,0 +1,205 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6227006682131789297
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 517229868902250478}
+  - component: {fileID: 5346288780853354647}
+  m_Layer: 0
+  m_Name: InputManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &517229868902250478
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6227006682131789297}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5346288780853354647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6227006682131789297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62a8a55fe6f300f4e8b46ff8361557f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseLookDirection:
+    m_Name: Mouse Look Direction
+    m_Type: 0
+    m_ExpectedControlType: Vector2
+    m_Id: 6750130f-4878-47e9-bf6c-f1efc31a8d60
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: bc11ff5f-2a97-4a8a-add4-baf6a25c0b10
+      m_Path: <Mouse>/delta
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Mouse Look Direction
+      m_Flags: 0
+    m_Flags: 0
+  lookDirInputRaw: {x: 0, y: 0, z: 0}
+  lookDirInput: {x: 0, y: 0, z: 0}
+  mousePosition:
+    m_Name: Mouse Position
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: d282f10f-496d-41b8-8c39-3399cbf3b3ec
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: be29ddcb-e5f5-4f5e-a539-87e6e7e11368
+      m_Path: <Mouse>/delta
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Mouse Position
+      m_Flags: 0
+    m_Flags: 0
+  mousePositionInput: {x: 0, y: 0, z: 0}
+  keyboardMoveDirection:
+    m_Name: Keyboard Move Direction
+    m_Type: 0
+    m_ExpectedControlType: Vector2
+    m_Id: a2ab6c0e-cf42-4d14-89f1-6d2d7cb554ac
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 2D Vector
+      m_Id: bf0a4baa-50a1-4b29-aef2-2d25b62f79d5
+      m_Path: 2DVector
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Keyboard Move Direction
+      m_Flags: 4
+    - m_Name: up
+      m_Id: 75c47bc3-fce0-4bcd-b6e4-ebc3b82c2596
+      m_Path: <Keyboard>/w
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Keyboard Move Direction
+      m_Flags: 8
+    - m_Name: down
+      m_Id: b3010089-d9fb-450c-9dc7-3811930d121c
+      m_Path: <Keyboard>/s
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Keyboard Move Direction
+      m_Flags: 8
+    - m_Name: left
+      m_Id: 4d147409-4398-4ed2-bc9f-43ba3ed3992b
+      m_Path: <Keyboard>/a
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Keyboard Move Direction
+      m_Flags: 8
+    - m_Name: right
+      m_Id: dfc2038c-345f-4aee-894f-d594f814d25b
+      m_Path: <Keyboard>/d
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Keyboard Move Direction
+      m_Flags: 8
+    m_Flags: 0
+  movementDirInput: {x: 0, y: 0, z: 0}
+  keyboardCrouch:
+    m_Name: Keyboard Crouch
+    m_Type: 1
+    m_ExpectedControlType: Button
+    m_Id: 0d511724-e048-454c-95c8-c5325ef032ef
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 6b1dc63d-aaab-4ab5-bce4-dc697650ac69
+      m_Path: <Keyboard>/leftCtrl
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Keyboard Crouch
+      m_Flags: 0
+    m_Flags: 0
+  isCrouching: 0
+  keyboardRun:
+    m_Name: Keyboard Run
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: ce984517-afa8-44f5-9d5d-e8ac7e627317
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: e159e134-3ec0-486e-b39d-ca1dc7859f1d
+      m_Path: <Keyboard>/shift
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Keyboard Run
+      m_Flags: 0
+    m_Flags: 0
+  isSprinting: 0
+  keyboardInteract:
+    m_Name: Keyboard Interact
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 389943c2-6dcb-4162-a8f2-37979000cac3
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 5c2d2e2e-977a-4485-8a21-6ad65ec2cc3e
+      m_Path: <Keyboard>/e
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Keyboard Interact
+      m_Flags: 0
+    m_Flags: 0
+  isInteracting: 0
+  keyboardJump:
+    m_Name: Keyboard Jump
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: c25d0b61-4cc3-4c05-8b4e-650b14c108f6
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 6eb1d957-a7b2-4aa5-8018-0bfff0126a88
+      m_Path: <Keyboard>/space
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Keyboard Jump
+      m_Flags: 0
+    m_Flags: 0
+  isJumping: 0

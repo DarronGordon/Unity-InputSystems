@@ -1,0 +1,147 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 599218d0b52048144a925048b331989a, type: 3}
+  m_Name: CharacterMoveData_SO
+  m_EditorClassIdentifier: 
+  _name: Dax_CharacterControl
+  description: Character Controler Data
+  height: 1.8
+  radius: 0.35
+  camInvertY: 0
+  verticalOffset: -0.1
+  cameraHorizontalSensitivity: 20
+  cameraVerticalSensitivity: 20
+  camera_MinPitch: -75
+  camera_MaxPitch: 75
+  defaultFov: 40
+  walkingFOV: 40
+  runningFov: 42
+  slewRate: 10
+  canRun: 1
+  walkSpeed: 3.3
+  runSpeed: 5
+  acceleration: 1
+  slopeLimit: 70
+  canCrouch: 1
+  crouchingToggle: 0
+  crouchingHeight: 0.9
+  crouchingSpeedMultiplier: 0.5
+  crouchingTransitionTime: 0.2
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  groundedCheckBuffer: 0.4
+  groundedCheckColliderRadiusBuffer: 0.05
+  canJump: 1
+  canDoubleJump: 1
+  jumpVelocity: 5
+  jumpTime: 0.2
+  stairCheck_LookAheadRange: 0.1
+  stairHeightCheck_MaxHeight: 0.3
+  stepClimbSpeed: 0.15
+  headBobEnable: 1
+  headBobActivation_MinSpeed: 0.1
+  headBobLerpSpeed: 1
+  headBobSpeed_VertAnimCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 0.29835814
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  headBobSpeed_HoriAnimCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 0.05
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  headBob_interval:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: -0.00995636
+      value: 0.80966187
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 0.49227905
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  hideCursor: 1
+  canAirControl: 1
+  airControlMaxSpeed: 10
+  fallingVelocity: 12.5
+  materialDefault: {fileID: 13400000, guid: 309ac107e33797748ae371ea34023ee4, type: 2}
+  materialJumping: {fileID: 13400000, guid: 0b8b0536f56a3a8478cbea4237be0da4, type: 2}
+  footStepSounds:
+  - {fileID: 8300000, guid: c5190052835796043afcb3c33240b5f3, type: 3}
+  - {fileID: 8300000, guid: c290f8e6f474eda45a6fc219a7fc1384, type: 3}
+  - {fileID: 8300000, guid: bf6538f3c5f750c4486689fa075e7ee8, type: 3}
+  - {fileID: 8300000, guid: 9e2f87c731d8efe40b7d138701654bcd, type: 3}
+  - {fileID: 8300000, guid: 199dc179978d52940b57eb5e96b95625, type: 3}
+  - {fileID: 8300000, guid: 7a7b1d9d77f3c9242bf2bc378207c3b0, type: 3}
+  - {fileID: 8300000, guid: 562ae856b79bd7045a641c01917a7b9c, type: 3}
+  - {fileID: 8300000, guid: c029cccd48dce9f49ad42a577640e71e, type: 3}
+  landOnGroundSounds:
+  - {fileID: 8300000, guid: 60d4b054a55189841b0149270f19d6eb, type: 3}
+  jumpingSounds:
+  - {fileID: 8300000, guid: 7362804951902f74c81e8c2263198299, type: 3}
+  footStepSpeed_Walking: 0.5
+  footStepSpeed_sprinting: 0.38
+  minAirTimeForLandSound: 0.26

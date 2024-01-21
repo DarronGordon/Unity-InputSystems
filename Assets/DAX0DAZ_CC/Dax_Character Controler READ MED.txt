@@ -1,0 +1,43 @@
+Dax_Character Controler READ ME:D
+
+First Steps after adding unity package
+
+Drag PLAYER (prefab varient)Into Scene - This is your character, controler and your input system with your Virtual cam.
+
+Add the cinemachine Brain to your main camera.
+
+AND THAT SHOULD DO IT!!! :D
+
+You can modify and adjust the values of the CC from the scriptable object this can also be done during play mode with changes saved to the SO- in the inspector ;)--------> Just be careful dont forget the default setting incase you need to reset back.(especialy for those animation curves like in head bob ect...)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                                                                                                                 --DAX0DAZ--
